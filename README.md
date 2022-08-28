@@ -1,2 +1,0 @@
-# austinhshih.com
- personal website
