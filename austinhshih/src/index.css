@@ -13,4 +13,12 @@ html {
     --textPrimary: white;
     --textSecondary: #5CE1E6;
     --textTertiary: #FF8484;
+    --whiteButtonFill: rgba(255, 255, 255, 0.6);
+
+    --maxWidth: 824px;
+    --borderRadius: 8px;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0
 }
