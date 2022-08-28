@@ -7,18 +7,55 @@
 
 body {
     margin: 0;
+    background-color: var(--backgroundPrimary);
 }
 
 html {
     --textPrimary: white;
     --textSecondary: #5CE1E6;
     --textTertiary: #FF8484;
-    --whiteButtonFill: rgba(255, 255, 255, 0.6);
+    --backgroundPrimary: #263547;
+    --whiteButtonFill: rgba(255, 255, 255, 0.3);
+    --slightlyTransparentBlue: rgba(92, 225, 230, 0.8);
 
     --maxWidth: 824px;
     --borderRadius: 8px;
+    --tinySpacer: 12px;
+    --smallSpacer: 18px;
+    --spacer: 24px;
+    --largeSpacer: 48px;
+    --hugeSpacer: 180px;
+
 }
 
 h1, h2, h3, h4, p {
-    margin: 0
+    margin: 0;
+}
+
+h3 {
+    color: var(--textTertiary);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+h4 {
+    color: var(--textSecondary);
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
+}
+
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
 }

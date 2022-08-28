@@ -1,17 +1,25 @@
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
+import WelcomeContainerBar from './WelcomeContactBar'
 const Welcome = React.forwardRef((props, ref) => {
+  const scrollDown = () => {
+    window.scrollTo({
+      top: props.aboutRef.current.offsetTop,
+      behavior: 'smooth'
+    });
+  };
   return (
     <>
-      <div ref={ref} class="background-image">
-        <div class="container">
-          <h3 class='welcome-text'>WELCOME</h3>
-          <h1 class="welcome-name">I'm Austin Shih.</h1>
-          <h3 class="welcome-software-stack">Software Engineer | Full Stack</h3>
-          <button class="continue-button">
+      <div ref={ref} className="background-image">
+        <div className="container">
+          <h3 className='welcome-text'>WELCOME</h3>
+          <h1 className="welcome-name">I’m Austin Shih.</h1>
+          <h3 className="welcome-software-stack">Software Engineer | Full Stack</h3>
+          <button onClick={scrollDown} className="continue-button">
             <BsChevronDown></BsChevronDown>
           </button>
         </div>
+        <WelcomeContainerBar></WelcomeContainerBar>
       </div>
       <style> {`
           .background-image {
@@ -23,7 +31,9 @@ const Welcome = React.forwardRef((props, ref) => {
             background-size: cover;
             background-position: bottom;
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
           }
           .container {
             display: flex;
@@ -31,7 +41,6 @@ const Welcome = React.forwardRef((props, ref) => {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 100%;
             max-width: var(--maxWidth);
             margin-left: 24px;
             margin-right: 24px;
@@ -70,6 +79,7 @@ const Welcome = React.forwardRef((props, ref) => {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
           }
           .continue-button svg {
             stroke-width: 0.4;
