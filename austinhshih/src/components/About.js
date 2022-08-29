@@ -18,8 +18,8 @@ const About = forwardRef((props, ref) => {
       </div>
       <style> {`
       .about-container {
-        margin-top: var(--hugeSpacer);
-        margin-bottom: var(--hugeSpacer);
+        padding-top: var(--hugeSpacer);
+        padding-bottom: var(--hugeSpacer);
         position: relative;
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@ const About = forwardRef((props, ref) => {
         margin-right: var(--spacer);
       }
       .offset-container>div {
-        max-width: 324px;
+        max-width: var(--aboutOffsetMaxWidth);
       }
       .current-focusses {
         margin-top: var(--tinySpacer);

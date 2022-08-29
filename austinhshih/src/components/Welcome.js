@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
-import WelcomeContainerBar from './WelcomeContactBar'
+import WelcomeContainerBar from './welcome/WelcomeContactBar'
 const Welcome = React.forwardRef((props, ref) => {
   const scrollDown = () => {
     window.scrollTo({

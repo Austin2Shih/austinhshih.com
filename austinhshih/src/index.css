@@ -15,16 +15,29 @@ html {
     --textSecondary: #5CE1E6;
     --textTertiary: #FF8484;
     --backgroundPrimary: #263547;
+    --backgroundSecondary: #354564;
     --whiteButtonFill: rgba(255, 255, 255, 0.3);
+    --blurpleButtonFill: rgba(38, 53, 71, 0.3);
     --slightlyTransparentBlue: rgba(92, 225, 230, 0.8);
 
     --maxWidth: 824px;
+    --aboutOffsetMaxWidth: 324px;
+    --experienceMaxWidth: 392px;
+    --experienceLeftShift: 82px;
     --borderRadius: 8px;
+    --tinierSpacer: 8px;
     --tinySpacer: 12px;
     --smallSpacer: 18px;
     --spacer: 24px;
     --largeSpacer: 48px;
+    --largerSpacer: 64px;
     --hugeSpacer: 180px;
+
+    --fontSmall: 0.8rem;
+    --fontMedium: 1rem;
+    --fontSmallHeader: 0.9rem;
+    --fontHeader: 1.2rem;
+    --fontButton: 1.4rem;
 
 }
 
@@ -35,7 +48,7 @@ h1, h2, h3, h4, p {
 h3 {
     color: var(--textTertiary);
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: var(--fontSmall);
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 12px;
@@ -44,14 +57,14 @@ h3 {
 h4 {
     color: var(--textSecondary);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: var(--fontHeader);
     letter-spacing: 0.06em;
 }
 
 p {
     font-style: normal;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: var(--fontSmall);
     letter-spacing: 0.06em;
 }
 
