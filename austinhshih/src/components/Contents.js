@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contents = ({refs}) => {
+  const [activeTOC, setActiveTOC] = useState('welcome');
   const handleScroll = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
@@ -10,8 +11,21 @@ const Contents = ({refs}) => {
   return (
     <>
       <div className='toc-container'>
-        <p onClick={() => handleScroll(refs.welcomeRef)}>welcome</p>
-        <p onClick={() => handleScroll(refs.aboutRef)}>about</p>
+        <p 
+          className={`${(activeTOC === 'welcome')? 'toc-active' : ''}`} 
+          onClick={() => handleScroll(refs.welcomeRef)}>
+            welcome
+        </p>
+        <p 
+          className={`${(activeTOC === 'about')? 'toc-active' : ''}`} 
+          onClick={() => handleScroll(refs.aboutRef)}>
+            about
+        </p>
+        <p 
+          className={`${(activeTOC === 'experience')? 'toc-active' : ''}`} 
+          onClick={() => handleScroll(refs.experienceRef)}>
+            experience
+        </p>
       </div>
       <style> {`
         .toc-container {
@@ -20,8 +34,17 @@ const Contents = ({refs}) => {
           justify-content: flex-start;
         }
         .toc-container>p {
-          margin-bottom: var(--smallSpacer);
+          padding-top: var(--tinySpacer);
+          padding-bottom: var(--tinySpacer);
           cursor: pointer;
+          opacity: 0.3;
+          width: 100px;
+        }
+        .toc-container>p:hover {
+          opacity: 1.0;
+        }
+        .toc-container>p.toc-active {
+          opacity: 1.0;
         }
       `} </style>
     </>
