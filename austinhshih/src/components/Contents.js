@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const Contents = ({refs}) => {
-  const [activeTOC, setActiveTOC] = useState('welcome');
+const Contents = ({refs, activeTOC}) => {
   const handleScroll = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
@@ -25,6 +24,11 @@ const Contents = ({refs}) => {
           className={`${(activeTOC === 'experience')? 'toc-active' : ''}`} 
           onClick={() => handleScroll(refs.experienceRef)}>
             experience
+        </p>
+        <p 
+          className={`${(activeTOC === 'portfolio')? 'toc-active' : ''}`} 
+          onClick={() => handleScroll(refs.portfolioRef)}>
+            portfolio
         </p>
       </div>
       <style> {`

@@ -11,7 +11,7 @@ const About = forwardRef((props, ref) => {
           <div className="image-of-me"></div>
           <div>
             <p>{aboutText.introText}</p>
-            <h4 className='current-focusses'>current focusses</h4>
+            <h4 className='current-focusses'>current focuses</h4>
             <p>{aboutText.currentFocussees}</p>
           </div>
         </div>

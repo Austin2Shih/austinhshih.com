@@ -16,23 +16,23 @@ const Experience = forwardRef((props, ref) => {
           <h4 style={{fontWeight: 700}}>work experience</h4>
           { 
             experienceData.map((experience, index) => (
-              <>
+              <div key={index}>
                 <WorkExperience data={experience}></WorkExperience>
                 {(index !== experienceData.length - 1) &&
                   <div className="divider"></div>
                 }
-              </>
+              </div>
             ))
           }
           <h4 style={{fontWeight: 700, marginTop: 'var(--largeSpacer)', marginBottom: 'var(--tinySpacer)'}}>education</h4>
           { 
             educationData.map((education, index) => (
-              <>
+              <div key={index}>
                 <Education data={education}></Education>
                 {(index !== educationData.length - 1) &&
                   <div className="divider">hello</div>
                 }
-              </>
+              </div>
             ))
           }
           <button className='resume-button'><p>resume</p><AiOutlineDownload></AiOutlineDownload></button>

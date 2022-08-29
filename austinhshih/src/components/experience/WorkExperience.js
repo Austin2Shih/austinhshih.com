@@ -5,12 +5,12 @@ const WorkExperience = ({data}) => {
     <>
       <div className='work-container'>
         <h4 className='work-header'>{`${data.company} `}<span style={{color: 'var(--textPrimary)'}}>{data.position}</span></h4>
-        <div classname='work-right-shift' style={{marginLeft: 'var(--largeSpacer)'}}>
+        <div className='work-right-shift' style={{marginLeft: 'var(--largeSpacer)'}}>
             <h4 style={{fontSize: 'var(--fontSmallHeader)', margin: '4px 0px 4px 0px'}}>{data.timeFrame}</h4>
             <ul style={{listStylePosition: 'outside', paddingInlineStart: '1rem', margin: 0}}>
             {
                 data.description.map((desc, index) => {
-                    return (<li className='work-desc-item'>{desc}</li>)
+                    return (<li key={index} className='work-desc-item'>{desc}</li>)
                 })
             }
             </ul>

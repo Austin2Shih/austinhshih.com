@@ -20,7 +20,7 @@ html {
     --blurpleButtonFill: rgba(38, 53, 71, 0.3);
     --slightlyTransparentBlue: rgba(92, 225, 230, 0.8);
 
-    --maxWidth: 824px;
+    --maxWidth: 692px;
     --aboutOffsetMaxWidth: 324px;
     --experienceMaxWidth: 392px;
     --experienceLeftShift: 82px;
@@ -71,4 +71,7 @@ p {
 .button {
     margin: 0;
     padding: 0;
+    border-radius: var(--borderRadius);
+    font-family: 'poppins';
+    color: var(--textPrimary);
 }
