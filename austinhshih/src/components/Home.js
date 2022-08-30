@@ -4,6 +4,7 @@ import Welcome from './Welcome';
 import About from './About';
 import Experience from './Experience';
 import Portfolio from './Portfolio';
+import Skills from './Skills';
 
 const Home = () => {
   const [activeTOC, setActiveTOC] = useState('welcome');
@@ -12,6 +13,7 @@ const Home = () => {
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const portfolioRef = useRef(null);
+  const skillsRef = useRef(null);
 
   const refs = [
     {
@@ -29,6 +31,10 @@ const Home = () => {
     {
       ref: portfolioRef, 
       name: 'portfolio'
+    },
+    {
+      ref: skillsRef, 
+      name: 'skills'
     }
   ]
 
@@ -49,13 +55,14 @@ const Home = () => {
   return (
     <>
       <div className="toc">      
-        <Contents activeTOC={activeTOC} refs={{welcomeRef, aboutRef, experienceRef, portfolioRef}}></Contents>
+        <Contents activeTOC={activeTOC} refs={{welcomeRef, aboutRef, experienceRef, portfolioRef, skillsRef}}></Contents>
       </div>
       <div className='outer-container'>
         <Welcome aboutRef={aboutRef} ref={welcomeRef}></Welcome>
         <About ref={aboutRef}></About>
         <Experience ref={experienceRef}></Experience>
         <Portfolio ref={portfolioRef}></Portfolio>
+        <Skills ref={skillsRef}></Skills>
       </div>
       <style> {`
         .toc {
@@ -64,6 +71,7 @@ const Home = () => {
           padding-left: 56px;
           z-index: 1000;
           height: 0;
+          width: 0;
         }
         .outer-container {
           display: flex;

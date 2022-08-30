@@ -30,6 +30,11 @@ const Contents = ({refs, activeTOC}) => {
           onClick={() => handleScroll(refs.portfolioRef)}>
             portfolio
         </p>
+        <p 
+          className={`${(activeTOC === 'skills')? 'toc-active' : ''}`} 
+          onClick={() => handleScroll(refs.skillsRef)}>
+            skills
+        </p>
       </div>
       <style> {`
         .toc-container {
@@ -38,11 +43,11 @@ const Contents = ({refs, activeTOC}) => {
           justify-content: flex-start;
         }
         .toc-container>p {
+          position: relative;
           padding-top: var(--tinySpacer);
           padding-bottom: var(--tinySpacer);
           cursor: pointer;
           opacity: 0.3;
-          width: 100px;
         }
         .toc-container>p:hover {
           opacity: 1.0;

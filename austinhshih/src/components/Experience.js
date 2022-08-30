@@ -1,6 +1,6 @@
 import React, {forwardRef} from 'react'
 import experienceData from '../data/work-experience-data';
-import educationData from '../data/education-data copy';
+import educationData from '../data/education-data';
 
 import WorkExperience from './experience/WorkExperience';
 import Education from './experience/Education';

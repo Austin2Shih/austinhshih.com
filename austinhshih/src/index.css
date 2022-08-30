@@ -24,7 +24,13 @@ html {
     --aboutOffsetMaxWidth: 324px;
     --experienceMaxWidth: 392px;
     --experienceLeftShift: 82px;
+    --skillsMaxWidth: 274px;
+
+    --projectImagePercentage: 68%;
+
     --borderRadius: 8px;
+
+    --tiniestSpacer: 4px;
     --tinierSpacer: 8px;
     --tinySpacer: 12px;
     --smallSpacer: 18px;

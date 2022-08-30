@@ -9,6 +9,7 @@ const portfolioData = [
             "Keep track of polls you've created and voted for in your dashboard"
         ],
         imageFileName: 'TortlePoll.PNG',
+        projectLink: 'https://github.com/Austin2Shih/TortlePoll-Live-polling-website',
     },
     {
         title: 'Ring Detection OpenCV - First Tech Challenge',
@@ -19,6 +20,8 @@ const portfolioData = [
             "Leveraged OpenCV's image processing functions to filter and refine images to get accurate results."
         ],
         imageFileName: 'ring-detection.png',
+        projectLink: 'https://github.com/Future14473/Ultimate-Road-Runner/tree/dev/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ComputerVision',
+
     },
 ]
 

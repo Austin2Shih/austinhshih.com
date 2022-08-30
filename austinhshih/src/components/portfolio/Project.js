@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { AiOutlineGithub } from 'react-icons/ai'
 
 const Project = ({data}) => {
+  const [imageHovered, setImageHovered] = useState(false);
+
   return (
     <>
       <div className='project-container'>
         <h4 style={{color: 'var(--textPrimary)', fontSize: 'var(--fontMedium)'}}>{data.title}</h4>
         <div className='inner-container'>
-          <div classname='project-text-container'>
+          <div className='project-text-container' style={{width: 'calc(100% - var(--projectImagePercentage))'}}>
             <h3 style={{textTransform: 'uppercase', textAlign: 'left'}}>{data.shortDesc}</h3>
             <ul style={{listStylePosition: 'outside', paddingInlineStart: '1rem', margin: 0}}>
             {
@@ -17,7 +19,18 @@ const Project = ({data}) => {
             }
             </ul>
           </div>
-          <img src={require(`../../media/portfolio/${data.imageFileName}`)}></img>
+          <a
+            href={data.projectLink}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className='project-image-container' 
+            style={{width: 'var(--projectImagePercentage)'}}
+            onMouseEnter={() => {setImageHovered(true)}}
+            onMouseLeave={() => {setImageHovered(false)}}
+            >
+            <img className={(imageHovered)? 'hovered' : ''} src={require(`../../media/portfolio/${data.imageFileName}`)}></img>
+            <div className={`learn-more-button ${(imageHovered)? 'hovered' : ''}`}><p>learn more</p><AiOutlineGithub></AiOutlineGithub></div>
+          </a>
         </div>
       </div>
       <style> {`
@@ -29,19 +42,18 @@ const Project = ({data}) => {
           width: var(--maxWidth);
         }
         .inner-container {
+          position: relative;
           display: flex;
           flex-direction: row;
-          width: 100%;
+          width: calc(100% - 2 * var(--tinySpacer));
           gap: var(--tinySpacer);
           border: solid 2px var(--textSecondary);
           border-radius: var(--borderRadius);
-          padding: var(--tinySpacer) var(--tinySpacer) var(--tinySpacer) var(--tinySpacer);
+          padding: var(--tinySpacer);
         }
         .project-text-container {
-          position: relative;
           display: flex;
           flex-direction: column;
-          width: 32%;
         }
         .project-point-item {
           padding-left: 0;
@@ -49,14 +61,45 @@ const Project = ({data}) => {
           font-weight: 300;
           margin-bottom: 4px;
         }
-        .inner-container>img {
-          border-radius: var(--borderRadius);
-          width: 68%;
-          object-fit: cover;
+        .project-image-container {
+          position: relative;
+          cursor: pointer;
+
         }
-        .inner-container>img:hover {
+        .project-image-container>img {
+          border-radius: var(--borderRadius);
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .project-image-container>img.hovered {
           opacity: 0.1;
         }
+        .learn-more-button, learn-more-button:hover, learn-more-button:focus, learn-more-button:active {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          display: none;
+          flex-direction: row;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+
+          font-size: var(--fontHeader);
+          text-decoration: none;
+          color: var(--textPrimary);
+        }
+        .learn-more-button.hovered {
+          display: flex;
+        }
+        .learn-more-button>p {
+          color: var(--textSecondary);
+          font-size: var(--fontHeader);
+          margin-right: var(--tinierSpacer);
+        }
+
       `} </style>
     </>
   )

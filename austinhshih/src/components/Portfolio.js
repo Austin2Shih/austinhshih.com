@@ -11,7 +11,7 @@ const Portfolio = forwardRef((props, ref) => {
         <div className='projects-container'>
           {
             portfolioData.map((project, index) => {
-              return (<Project data={project}></Project>)
+              return (<Project key={index} data={project}></Project>)
             })
           }
         </div>
