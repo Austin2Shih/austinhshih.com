@@ -56,7 +56,7 @@ const Welcome = React.forwardRef((props, ref) => {
             color: var(--textSecondary);
             font-family: 'Poppins';
             font-weight: 500;
-            font-size: 3.4rem;
+            font-size: var(--fontHuge);
           }
           .welcome-software-stack {
             color: var(--textPrimary);

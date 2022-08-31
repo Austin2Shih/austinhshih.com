@@ -19,12 +19,17 @@ html {
     --whiteButtonFill: rgba(255, 255, 255, 0.3);
     --blurpleButtonFill: rgba(38, 53, 71, 0.3);
     --slightlyTransparentBlue: rgba(92, 225, 230, 0.8);
+    --tocBackground: rgba(0, 0, 0, 0.94);
 
     --maxWidth: 692px;
     --aboutOffsetMaxWidth: 324px;
     --experienceMaxWidth: 392px;
     --experienceLeftShift: 82px;
     --skillsMaxWidth: 274px;
+    --tocOffsetTop: 56px;
+    --tocOffsetLeft: 64px;
+    --tocButtonLeft: 24px;
+    --tocButtonTop: 24px;
 
     --projectImagePercentage: 68%;
 
@@ -44,7 +49,9 @@ html {
     --fontSmallHeader: 0.9rem;
     --fontHeader: 1.2rem;
     --fontButton: 1.4rem;
+    --fontHuge: 3.4rem;
 
+    --tabletBreakPoint: 1024px;
 }
 
 h1, h2, h3, h4, p {
