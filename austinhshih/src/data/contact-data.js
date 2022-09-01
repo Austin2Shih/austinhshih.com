@@ -1,5 +1,5 @@
 const contactData = {
-    location: "Fremont, CA",
+    location: "San Francisco Bay Area",
     email: "austinhshih@gmail.com",
     phone: "(510) 737-3634",
 }

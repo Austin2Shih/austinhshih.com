@@ -4,6 +4,7 @@ import { GoLocation } from 'react-icons/go'
 import { AiOutlineMail } from 'react-icons/ai'
 import { GiSmartphone } from 'react-icons/gi'
 import ContactBar from './contact/ContactBar'
+import mediaQueries from '../media-queries'
 
 const Contact = forwardRef((props, ref) => {
   return (
@@ -47,6 +48,13 @@ const Contact = forwardRef((props, ref) => {
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
+      }
+      ${mediaQueries.phoneSize} {
+        .contact-large-icons {
+          align-items: center;
+          flex-direction: column;
+          gap: var(--spacer);
+        }
       }
       .contact-large-icons>div {
         display: flex;

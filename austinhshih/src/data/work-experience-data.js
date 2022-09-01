@@ -21,7 +21,7 @@ const workExperienceData = [
     }, 
     {
         company: 'Advantech',
-        position: 'Information Technology Intern',
+        position: 'IT Intern',
         timeFrame: 'July 2021 - August 2021',
         description: [
             "Improved the efficiency of the IT department by searching for creative ways to optimize and automate tasks with batch and powershell scripts",

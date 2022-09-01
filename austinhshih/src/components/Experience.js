@@ -7,6 +7,8 @@ import Education from './experience/Education';
 
 import { AiOutlineDownload } from 'react-icons/ai'
 
+import mediaQueries from '../media-queries';
+
 const Experience = forwardRef((props, ref) => {
   return (
     <>
@@ -56,6 +58,11 @@ const Experience = forwardRef((props, ref) => {
         max-width: calc(var(--maxWidth) - var(--experienceLeftShift));
         padding-left: var(--experienceLeftShift);
         align-self: center;
+      }
+      ${mediaQueries.phoneSize} {
+        .experience-container {
+          padding-left: 0px;
+        }
       }
       .divider {
         height: 0px

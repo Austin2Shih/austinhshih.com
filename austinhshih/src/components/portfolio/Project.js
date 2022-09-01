@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { AiOutlineGithub } from 'react-icons/ai'
+import mediaQueries from '../../media-queries';
 
 const Project = ({data}) => {
   const [imageHovered, setImageHovered] = useState(false);
@@ -9,7 +10,7 @@ const Project = ({data}) => {
       <div className='project-container'>
         <h4 style={{color: 'var(--textPrimary)', fontSize: 'var(--fontMedium)'}}>{data.title}</h4>
         <div className='inner-container'>
-          <div className='project-text-container' style={{width: 'calc(100% - var(--projectImagePercentage))'}}>
+          <div className='project-text-container' style={{width: 'var(--projectTextPercentage)'}}>
             <h3 style={{textTransform: 'uppercase', textAlign: 'left'}}>{data.shortDesc}</h3>
             <ul style={{listStylePosition: 'outside', paddingInlineStart: '1rem', margin: 0}}>
             {
@@ -45,11 +46,18 @@ const Project = ({data}) => {
           position: relative;
           display: flex;
           flex-direction: row;
-          width: calc(100% - 2 * var(--tinySpacer));
           gap: var(--tinySpacer);
           border: solid 2px var(--textSecondary);
           border-radius: var(--borderRadius);
           padding: var(--tinySpacer);
+        }
+        ${mediaQueries.phoneSize} {
+          .inner-container {
+            flex-direction: column;
+          }
+          .project-text-container {
+            width: 100%;
+          }
         }
         .project-text-container {
           display: flex;

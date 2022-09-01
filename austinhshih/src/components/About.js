@@ -1,5 +1,6 @@
 import React, {forwardRef} from 'react'
 import aboutText from '../data/about-text'
+import mediaQueries from '../media-queries'
 
 const About = forwardRef((props, ref) => {
   return (
@@ -31,13 +32,22 @@ const About = forwardRef((props, ref) => {
       }
       .offset-container {
         margin-top: var(--smallSpacer);
-        margin-left: var(--largeSpacer);
-        margin-right: var(--largeSpacer);
         display: flex;
         flex-direction: row;
         padding-left: var(--largeSpacer);
         padding-right: var(--largeSpacer);
         justify-content: center;
+        gap: var(--spacer);
+
+      }
+      ${mediaQueries.phoneSize} {
+        .offset-container {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+        }
       }
       .image-of-me {
         min-width: 128px;
@@ -47,7 +57,6 @@ const About = forwardRef((props, ref) => {
         background-image: url(${require('../media/about/hawaii-pic.jpg')});
         background-size: 164%;
         background-position: 52% 8%;
-        margin-right: var(--spacer);
       }
       .offset-container>div {
         max-width: var(--aboutOffsetMaxWidth);

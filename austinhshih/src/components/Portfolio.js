@@ -26,6 +26,8 @@ const Portfolio = forwardRef((props, ref) => {
         max-width: var(--maxWidth);
         align-self: center;
         text-align: center;
+        padding-left: var(--outerPadding);
+        padding-right: var(--outerPadding);
       }
       .projects-container {
         display: flex;

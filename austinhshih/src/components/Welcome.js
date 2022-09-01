@@ -49,7 +49,7 @@ const Welcome = React.forwardRef((props, ref) => {
             color: var(--textTertiary);
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: var(--fontHeader);
             letter-spacing: 0.06em;
           }
           .welcome-name {
@@ -62,14 +62,14 @@ const Welcome = React.forwardRef((props, ref) => {
             color: var(--textPrimary);
             font-family: 'Poppins';
             font-weight: 400;
-            font-size: 1.3rem;
+            font-size: var(--fontHeader);
             margin-top: 8px;
           }
           .continue-button {
             position: relative;
             margin-top: 28px;
-            width: 56px;
-            height: 56px;
+            width: var(--continueButtonWidth);
+            height: var(--continueButtonWidth);
             border-radius: var(--borderRadius);
             border: solid 2px var(--textPrimary);
             background-color: var(--whiteButtonFill);
