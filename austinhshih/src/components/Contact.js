@@ -20,12 +20,12 @@ const Contact = forwardRef((props, ref) => {
           <div>
             <p className='contact-large-icon'><AiOutlineMail></AiOutlineMail></p>
             <h3>EMAIL ME AT</h3>
-            <p>{contactData.email}</p>
+            <a className='contact-link' href='mailto: austinhshih@gmail.com'><p>{contactData.email}</p></a>
           </div>
           <div>
             <p className='contact-large-icon'><GiSmartphone></GiSmartphone></p>
             <h3>CALL ME AT</h3>
-            <p>{contactData.phone}</p>
+            <a className='contact-link' href='tel:+15107373634'><p>{contactData.phone}</p></a>
           </div>
         </div>
         <ContactBar></ContactBar>
@@ -42,6 +42,7 @@ const Contact = forwardRef((props, ref) => {
         align-self: center;
         align-items: center;
         gap: var(--tinySpacer);
+        height: 55vh;
       }
       .contact-large-icons {
         display: flex;
@@ -65,6 +66,9 @@ const Contact = forwardRef((props, ref) => {
       .contact-large-icon {
         font-size: var(--fontHuge);
         color: var(--textSecondary);
+      }
+      .contact-link {
+        color: var(--textPrimary);
       }
       `} </style>
     </>

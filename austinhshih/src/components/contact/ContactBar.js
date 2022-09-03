@@ -13,7 +13,7 @@ const ContactBar = () => {
           <AiFillLinkedin></AiFillLinkedin>
         </a>
         <a 
-          href="https://www.linkedin.com/in/austin-shih/" 
+          href="https://www.instagram.com/austin.shihh/" 
           target="_blank" 
           rel="noopener noreferrer">
           <AiOutlineInstagram></AiOutlineInstagram>

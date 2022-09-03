@@ -23,6 +23,19 @@ const portfolioData = [
         projectLink: 'https://github.com/Future14473/Ultimate-Road-Runner/tree/dev/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ComputerVision',
 
     },
+    {
+        title: 'Pancakebot-bot',
+        shortDesc: 'Python script that reads discord pancake-bot messages and answers trivia questions',
+        points: [
+            "Built Python script to answer Trivia questions provided by Discord's Pancakebot.",
+            "Leveraged Google's Tesseract OCR to pull information from screenshots of Discord.",
+            "Used the OpenTrivia API to gather Trivia questions and form a local database of solutions.",
+            "Developed sophisticated algorithm to filter out Pancakebot's Discord messages and interpret them accounting for the OCR's inaccuracies."
+        ],
+        imageFileName: 'pancake-bot.PNG',
+        projectLink: 'https://github.com/Austin2Shih/Pancakebot-bot',
+
+    },
 ]
 
 export default portfolioData

@@ -13,7 +13,7 @@ const WelcomeContactBar = () => {
           <AiFillLinkedin></AiFillLinkedin>
         </a>
         <a 
-          href="https://www.linkedin.com/in/austin-shih/" 
+          href="https://www.instagram.com/austin.shihh/" 
           target="_blank" 
           rel="noopener noreferrer">
           <AiOutlineInstagram></AiOutlineInstagram>
@@ -25,7 +25,7 @@ const WelcomeContactBar = () => {
           <AiFillGithub></AiFillGithub>
         </a>
         <a 
-          href="https://www.linkedin.com/in/austin-shih/" 
+          href="mailto: austinhshih@gmail.com" 
           target="_blank" 
           rel="noopener noreferrer">
           <AiOutlineMail></AiOutlineMail>

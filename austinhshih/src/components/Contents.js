@@ -1,41 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import mediaQueries from '../media-queries';
 import { BiMenuAltLeft } from 'react-icons/bi'
 
-const Contents = ({refs, activeTOC}) => {
+const Contents = ({refs}) => {
   const [display, setDisplay] = useState(false);
-  const tocItems = [
-    {
-      name: 'welcome',
-      ref: refs.welcomeRef,
-    },
-    {
-      name: 'about',
-      ref: refs.aboutRef,
-    },
-    {
-      name: 'experience',
-      ref: refs.experienceRef,
-    },
-    {
-      name: 'portfolio',
-      ref: refs.portfolioRef,
-    },
-    {
-      name: 'skills',
-      ref: refs.skillsRef,
-    },
-    {
-      name: 'contact',
-      ref: refs.contactRef,
-    },
-  ]
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: 'smooth'
-    });
-  };
+  const [activeTOC, setActiveTOC] = useState('welcome');
+  // const [defaultTOC, setDefaultTOC] = useState('contact');
+  const handleScroll = useCallback((ref) => {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth'
+      })
+    }, [])
+
+  const handleScreenChange = useCallback(() => {
+    // if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    //   setActiveTOC(defaultTOC);
+    //   setDefaultTOC(activeTOC)
+    // } else {
+      for (let i = refs.length - 1; i >= 0; i--) {
+        if (refs[i].ref.current) {
+          if (window.pageYOffset + window.innerHeight * 0.3 >= refs[i].ref.current.offsetTop) {
+            setActiveTOC(refs[i].name);
+            break
+          }
+        }
+      }
+    // }
+
+  }, [refs])
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScreenChange)
+    window.addEventListener('resize', handleScreenChange)
+    return () => {
+      window.removeEventListener('scroll', handleScreenChange)
+      window.removeEventListener('resize', handleScreenChange)
+    }
+  }, [])
+
   return (
     <>
       <div className='toc-container'>
@@ -45,12 +48,21 @@ const Contents = ({refs, activeTOC}) => {
             <BiMenuAltLeft></BiMenuAltLeft>
         </div>
         {
-          tocItems.map((item, index) => {
+          refs.map((item, index) => {
             return (
               <div
                 key={index}
                 className='menu-item'
                 onClick={() => {
+                  // if (item.name === 'skills') {
+                  //   setDefaultTOC('skills')
+                  //   setActiveTOC('skills')
+                  // } else if (item.name === 'contact') {
+                  //   setDefaultTOC('contact')
+                  //   setActiveTOC('contact')
+                  // } else {
+                  //   setDefaultTOC('contact')
+                  // }
                   handleScroll(item.ref)
                   setDisplay(false)
                 }}>
