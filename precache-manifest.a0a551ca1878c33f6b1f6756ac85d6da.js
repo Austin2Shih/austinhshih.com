@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "36f6f139e67a0ab5b563",
+    "revision": "875c32e0903415cc2c79",
     "url": "/static/css/main.6b42fa83.chunk.css"
   },
   {
-    "revision": "36f6f139e67a0ab5b563",
-    "url": "/static/js/main.d597d5c8.chunk.js"
+    "revision": "875c32e0903415cc2c79",
+    "url": "/static/js/main.13ecbd53.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -32,11 +32,15 @@ self.__precacheManifest = [
     "url": "/static/media/falling block game image.fb0380e5.jpg"
   },
   {
+    "revision": "98e552778749257bef46593520e4c11c",
+    "url": "/static/media/pancake-bot.98e55277.PNG"
+  },
+  {
     "revision": "70fb1db9218957a897ee442efc02365a",
     "url": "/static/media/ring-detection.70fb1db9.png"
   },
   {
-    "revision": "4afd6e708a6016a53246bd7535111261",
+    "revision": "c2b7b22c1ca70abd93359be3e14dc576",
     "url": "/index.html"
   }
 ];

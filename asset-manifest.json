@@ -1,18 +1,19 @@
 {
   "main.css": "/static/css/main.6b42fa83.chunk.css",
-  "main.js": "/static/js/main.d597d5c8.chunk.js",
-  "main.js.map": "/static/js/main.d597d5c8.chunk.js.map",
+  "main.js": "/static/js/main.13ecbd53.chunk.js",
+  "main.js.map": "/static/js/main.13ecbd53.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
   "static/js/2.e2b643c4.chunk.js": "/static/js/2.e2b643c4.chunk.js",
   "static/js/2.e2b643c4.chunk.js.map": "/static/js/2.e2b643c4.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.0133b50ac62a5c3c09f5d45e99c846cf.js": "/precache-manifest.0133b50ac62a5c3c09f5d45e99c846cf.js",
+  "precache-manifest.a0a551ca1878c33f6b1f6756ac85d6da.js": "/precache-manifest.a0a551ca1878c33f6b1f6756ac85d6da.js",
   "service-worker.js": "/service-worker.js",
   "static/css/main.6b42fa83.chunk.css.map": "/static/css/main.6b42fa83.chunk.css.map",
   "static/media/TortlePoll.PNG": "/static/media/TortlePoll.8a96058a.PNG",
   "static/media/city-photo.jpg": "/static/media/city-photo.570dc817.jpg",
   "static/media/falling block game image.jpg": "/static/media/falling block game image.fb0380e5.jpg",
   "static/media/hawaii-pic.jpg": "/static/media/hawaii-pic.38091706.jpg",
+  "static/media/pancake-bot.PNG": "/static/media/pancake-bot.98e55277.PNG",
   "static/media/ring-detection.png": "/static/media/ring-detection.70fb1db9.png"
 }
