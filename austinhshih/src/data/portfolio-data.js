@@ -36,6 +36,16 @@ const portfolioData = [
         projectLink: 'https://github.com/Austin2Shih/Pancakebot-bot',
 
     },
+    {
+        title: 'C++ Minesweeper',
+        shortDesc: 'Minesweeper recreated in C++ using the SFML library',
+        points: [
+            "Developed using modular programming for an easy transition between text and more graphics based UI.",
+        ],
+        imageFileName: 'minesweeper-image.png',
+        projectLink: 'https://github.com/liandy1028/Hoffman-Minesweeper',
+
+    },
 ]
 
 export default portfolioData
