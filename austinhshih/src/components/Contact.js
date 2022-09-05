@@ -33,7 +33,7 @@ const Contact = forwardRef((props, ref) => {
       <style> {`
       .contact-container {
         padding-top: var(--largerSpacer);
-        padding-bottom: var(--hugeSpacer);
+        padding-bottom: 45vh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -41,8 +41,9 @@ const Contact = forwardRef((props, ref) => {
         max-width: var(--maxWidth);
         align-self: center;
         align-items: center;
+        justify-content: space-between;
         gap: var(--tinySpacer);
-        height: 55vh;
+        min-height: 25vh;
       }
       .contact-large-icons {
         display: flex;

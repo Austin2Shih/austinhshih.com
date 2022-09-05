@@ -37,7 +37,14 @@ const Experience = forwardRef((props, ref) => {
               </div>
             ))
           }
-          <button className='resume-button'><p>resume</p><AiOutlineDownload></AiOutlineDownload></button>
+          <a 
+            className='resume-button' 
+            href={require('../media/experience/Resume - Austin Shih.pdf')}
+            target='_blank'
+            rel="noopener noreferrer"
+          >
+            <p>resume</p><AiOutlineDownload></AiOutlineDownload>
+          </a>
         </div>
       </div>
       <style> {`
@@ -84,6 +91,7 @@ const Experience = forwardRef((props, ref) => {
         justify-content: center;
         text-align: center;
         align-items: center;
+        text-decoration: none;
       }
       .resume-button>p {
         color: var(--textSecondary);
