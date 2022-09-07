@@ -11,21 +11,23 @@ const Contact = forwardRef((props, ref) => {
     <>
       <div ref={ref} className='contact-container'>
         <h3>CONTACT</h3>
-        <div className='contact-large-icons'>
-          <div>
-            <p className='contact-large-icon'><GoLocation></GoLocation></p>
-            <h3>WHERE TO FIND ME</h3>
-            <p>{contactData.location}</p>
-          </div>
-          <div>
-            <p className='contact-large-icon'><AiOutlineMail></AiOutlineMail></p>
-            <h3>EMAIL ME AT</h3>
-            <a className='contact-link' href='mailto: austinhshih@gmail.com'><p>{contactData.email}</p></a>
-          </div>
-          <div>
-            <p className='contact-large-icon'><GiSmartphone></GiSmartphone></p>
-            <h3>CALL ME AT</h3>
-            <a className='contact-link' href='tel:+15107373634'><p>{contactData.phone}</p></a>
+        <div className='contact-aligner'>
+          <div className='contact-large-icons'>
+            <div>
+              <p className='contact-large-icon'><GoLocation></GoLocation></p>
+              <h3>WHERE TO FIND ME</h3>
+              <p>{contactData.location}</p>
+            </div>
+            <div>
+              <p className='contact-large-icon'><AiOutlineMail></AiOutlineMail></p>
+              <h3>EMAIL ME AT</h3>
+              <a className='contact-link' href='mailto: austinhshih@gmail.com'><p>{contactData.email}</p></a>
+            </div>
+            <div>
+              <p className='contact-large-icon'><GiSmartphone></GiSmartphone></p>
+              <h3>CALL ME AT</h3>
+              <a className='contact-link' href='tel:+15107373634'><p>{contactData.phone}</p></a>
+            </div>
           </div>
         </div>
         <ContactBar></ContactBar>
@@ -33,7 +35,6 @@ const Contact = forwardRef((props, ref) => {
       <style> {`
       .contact-container {
         padding-top: var(--largerSpacer);
-        padding-bottom: 45vh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -43,7 +44,7 @@ const Contact = forwardRef((props, ref) => {
         align-items: center;
         justify-content: space-between;
         gap: var(--tinySpacer);
-        min-height: 25vh;
+        min-height: 70vh;
       }
       .contact-large-icons {
         display: flex;
@@ -70,6 +71,12 @@ const Contact = forwardRef((props, ref) => {
       }
       .contact-link {
         color: var(--textPrimary);
+      }
+      .contact-aligner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: var(--largeSpacer);
       }
       `} </style>
     </>

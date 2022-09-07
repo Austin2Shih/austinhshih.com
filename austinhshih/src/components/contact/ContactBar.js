@@ -1,10 +1,10 @@
 import React from 'react'
-import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
 
 const ContactBar = () => {
   return (
     <>
-      <div className="logo-container">
+      <div className="logo-container-contact">
         <a
           style={{marginLeft: 'var(--smallSpacer)'}}
           href="https://www.linkedin.com/in/austin-shih/" 
@@ -26,16 +26,16 @@ const ContactBar = () => {
         </a>
       </div>
       <style> {`
-          .logo-container {
-            position: absolute;
+          .logo-container-contact {
+            position: relative;
             display: flex;
             flex-direction: row;
             width: 100%;
             max-width: var(--maxWidth);
-            bottom: var(--largerSpacer);
             justify-content: center;
+            padding-bottom: var(--largeSpacer);
           }
-          .logo-container>* {
+          .logo-container-contact>* {
             font-size: var(--fontButton); 
             color: var(--textSecondary);
             margin-right: var(--smallSpacer);

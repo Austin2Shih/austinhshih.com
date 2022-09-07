@@ -43,7 +43,7 @@ const WelcomeContactBar = () => {
             justify-content: center;
           }
           .logo-container>* {
-            font-size: 36px; 
+            font-size: var(--fontButton); 
             color: var(--slightlyTransparentBlue);
             margin-right: var(--smallSpacer);
           }
