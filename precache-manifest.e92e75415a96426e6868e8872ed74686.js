@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2578014803f118145e75",
+    "revision": "84c8ad976ceb87b44995",
     "url": "/static/css/main.6b42fa83.chunk.css"
   },
   {
-    "revision": "2578014803f118145e75",
-    "url": "/static/js/main.b86fc292.chunk.js"
+    "revision": "84c8ad976ceb87b44995",
+    "url": "/static/js/main.cd2f03fb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/ring-detection.70fb1db9.png"
   },
   {
-    "revision": "ccf92963f0d4ab557b38d25bb376f5a3",
+    "revision": "61ad111be04584c97bfdbfa83c6941f0",
     "url": "/index.html"
   }
 ];
