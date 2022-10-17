@@ -7,7 +7,9 @@ const skillsData =
         "Express.js",
         "Unity", 
         "PostgreSQL",
-        "Knex.js"
+        "Knex.js",
+        "GraphQL",
+        "Apollo"
     ],
     codingLanguages: 
     [

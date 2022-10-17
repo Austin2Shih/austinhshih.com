@@ -6,7 +6,8 @@ const portfolioData = [
             "Enjoy live poll results",
             "Filter results by demographic group",
             "Browse and take public polls",
-            "Keep track of polls you've created and voted for in your dashboard"
+            "Keep track of polls you've created and voted for in your dashboard",
+            "The site is deployed at https://tortlepoll.vercel.app/"
         ],
         imageFileName: 'TortlePoll.PNG',
         projectLink: 'https://github.com/Austin2Shih/TortlePoll-Live-polling-website',
