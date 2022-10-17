@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bfd11e2f66887c91366a",
+    "revision": "2578014803f118145e75",
     "url": "/static/css/main.6b42fa83.chunk.css"
   },
   {
-    "revision": "bfd11e2f66887c91366a",
-    "url": "/static/js/main.cc1f1bc2.chunk.js"
+    "revision": "2578014803f118145e75",
+    "url": "/static/js/main.b86fc292.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/hawaii-pic.38091706.jpg"
   },
   {
-    "revision": "8ff69fca666274a2cd8d5085d658262f",
-    "url": "/static/media/Resume - Austin Shih.8ff69fca.pdf"
+    "revision": "de16313ebb5e6ca0019e1502020a6905",
+    "url": "/static/media/Resume - Austin Shih.de16313e.pdf"
   },
   {
     "revision": "8a96058a71d47293059467ce69662b28",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/ring-detection.70fb1db9.png"
   },
   {
-    "revision": "87efe0f79e1836361e323c2ed9e6b8f9",
+    "revision": "ccf92963f0d4ab557b38d25bb376f5a3",
     "url": "/index.html"
   }
 ];
