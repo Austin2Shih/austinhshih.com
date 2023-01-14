@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "84c8ad976ceb87b44995",
+    "revision": "19143ee884a2408c04da",
     "url": "/static/css/main.6b42fa83.chunk.css"
   },
   {
-    "revision": "84c8ad976ceb87b44995",
-    "url": "/static/js/main.cd2f03fb.chunk.js"
+    "revision": "19143ee884a2408c04da",
+    "url": "/static/js/main.24c174ea.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,12 @@ self.__precacheManifest = [
     "url": "/static/media/hawaii-pic.38091706.jpg"
   },
   {
-    "revision": "de16313ebb5e6ca0019e1502020a6905",
-    "url": "/static/media/Resume - Austin Shih.de16313e.pdf"
+    "revision": "5e6b3e821f62089b2a33ba5cfbd0e0cd",
+    "url": "/static/media/Resume - Austin Shih.5e6b3e82.pdf"
+  },
+  {
+    "revision": "ef65af5f83c614b38ab71e1de59eac53",
+    "url": "/static/media/MusicMaps.ef65af5f.png"
   },
   {
     "revision": "8a96058a71d47293059467ce69662b28",
@@ -48,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/ring-detection.70fb1db9.png"
   },
   {
-    "revision": "61ad111be04584c97bfdbfa83c6941f0",
+    "revision": "a6294fc99224e17fb2feb68dffe622b9",
     "url": "/index.html"
   }
 ];
