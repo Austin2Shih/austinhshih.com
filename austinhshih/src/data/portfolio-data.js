@@ -1,5 +1,18 @@
 const portfolioData = [
     {
+        title: 'MusicMaps',
+        shortDesc: 'Map of nearby Spotify listening activity for discovering new music',
+        points: [
+            "Find out what the nearest users are listening to with live updates",
+            "Locally hosted postgres database to keep track of Spotify access tokens",
+            "Express app using Apollo/graphQL",
+            "Frontend developed with React",
+            "Login with Spotify one time, authentication state locally stored",
+        ],
+        imageFileName: 'MusicMaps.png',
+        projectLink: 'https://github.com/Austin2Shih/Music-Map',
+    },
+    {
         title: 'TortlePoll - Live polling website',
         shortDesc: 'Live polling site similar to StrawPoll developed with Next.js.',
         points: [
