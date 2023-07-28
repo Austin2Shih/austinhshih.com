@@ -25,7 +25,7 @@ html {
 
     --maxWidth: 692px;
     --aboutOffsetMaxWidth: 324px;
-    --experienceMaxWidth: 392px;
+    --experienceMaxWidth: 500px;
     --experienceLeftShift: 82px;
     --skillsMaxWidth: 274px;
     --tocOffsetTop: 56px;
@@ -48,17 +48,22 @@ html {
     --largerSpacer: 64px;
     --hugeSpacer: 180px;
 
-    --fontSmall: 0.8rem;
-    --fontMedium: 1rem;
-    --fontSmallHeader: 0.9rem;
-    --fontHeader: 1.2rem;
+    --fontSmall: 1rem;
+    --fontMedium: 1.3rem;
+    --fontSmallHeader: 1.3rem;
+    --fontHeader: 1.5rem;
     --fontButton: 1.4rem;
+    --fontIcon: 2rem;
     --fontHuge: 3.4rem;
 
     --tabletBreakPoint: 1024px;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
     margin: 0;
 }
 
@@ -92,11 +97,23 @@ p {
     font-family: 'poppins';
     color: var(--textPrimary);
 }
+
+button:hover,
+a:hover {
+    transform: scale(1.04);
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
 @media (max-width: 1024px) {
     html {
         --maxWidth: 100%;
     }
 }
+
 @media (max-width: 664px) {
     html {
         --fontSmall: 0.75rem;

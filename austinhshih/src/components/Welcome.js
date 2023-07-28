@@ -1,6 +1,8 @@
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
 import WelcomeContainerBar from './welcome/WelcomeContactBar'
+import { Reveal } from './Reveal'
+
 const Welcome = React.forwardRef((props, ref) => {
   const scrollDown = () => {
     window.scrollTo({
@@ -10,30 +12,44 @@ const Welcome = React.forwardRef((props, ref) => {
   };
   return (
     <>
-      <div ref={ref} className="background-image">
+      <div ref={ref} className='hero-container'>
+        <div className="background-image"></div>
         <div className="container">
-          <h3 className='welcome-text'>WELCOME</h3>
-          <h1 className="welcome-name">I’m Austin Shih.</h1>
-          <h3 className="welcome-software-stack">Software Engineer | Full Stack</h3>
-          <button onClick={scrollDown} className="continue-button">
-            <BsChevronDown></BsChevronDown>
-          </button>
+            <h3 className='welcome-text'>WELCOME</h3>
+            <Reveal>
+            <h1 className="welcome-name">I’m Austin Shih.</h1>
+            </Reveal>
+            <Reveal>
+            <h3 className="welcome-software-stack">Software Engineer | Full Stack</h3>
+            </Reveal>
+            <Reveal width='fit-content'>
+              <button onClick={scrollDown} className="continue-button">
+                <BsChevronDown></BsChevronDown>
+              </button>
+            </Reveal>
         </div>
         <WelcomeContainerBar></WelcomeContainerBar>
       </div>
       <style> {`
-          .background-image {
+          .hero-container {
             position: relative;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-            background-image: url(${require("../media/welcome/city-photo.jpg")});
-            background-size: cover;
-            background-position: bottom;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            width: 100%;
+          }
+
+          .background-image {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-image: url(${require("../media/welcome/city-photo.jpg")});
+            background-size: cover;
+            background-position: bottom;
+            opacity: 0.6;
           }
           .container {
             display: flex;
@@ -44,6 +60,7 @@ const Welcome = React.forwardRef((props, ref) => {
             max-width: var(--maxWidth);
             margin-left: 24px;
             margin-right: 24px;
+            z-index: 100;
           }
           .welcome-text {
             color: var(--textTertiary);

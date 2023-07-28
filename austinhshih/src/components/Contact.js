@@ -51,6 +51,7 @@ const Contact = forwardRef((props, ref) => {
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
+        gap: var(--largeSpacer);
       }
       ${mediaQueries.phoneSize} {
         .contact-large-icons {

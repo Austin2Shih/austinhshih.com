@@ -1,19 +1,19 @@
 import React, {forwardRef} from 'react'
 import aboutText from '../data/about-text'
 import mediaQueries from '../media-queries'
-
+import { Reveal } from './Reveal'
 const About = forwardRef((props, ref) => {
   return (
     <>
       <div ref={ref} className='about-container'>
         <h3>ABOUT</h3>
-        <h4 className="intro-title">a quick introduction</h4>
+        <Reveal><div className='intro-title-div'><h4 className="intro-title">a quick introduction</h4></div></Reveal>
         <div className="offset-container">
           <div className="image-of-me"></div>
           <div>
-            <p>{aboutText.introText}</p>
-            <h4 className='current-focusses'>current focuses</h4>
-            <p>{aboutText.currentFocussees}</p>
+            <Reveal><p>{aboutText.introText}</p></Reveal>
+            <Reveal><h4 className='current-focusses'>current focuses</h4></Reveal>
+            <Reveal><p>{aboutText.currentFocussees}</p></Reveal>
           </div>
         </div>
       </div>
@@ -26,10 +26,16 @@ const About = forwardRef((props, ref) => {
         flex-direction: column;
         max-width: var(--maxWidth);
         align-self: center;
+        align-items: center;
       }
-      .intro-title {
-        text-align: center;
+
+      .intro-title-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
       }
+
       .offset-container {
         margin-top: var(--smallSpacer);
         display: flex;
@@ -43,10 +49,23 @@ const About = forwardRef((props, ref) => {
       ${mediaQueries.phoneSize} {
         .offset-container {
           flex-direction: column;
-          text-align: center;
+          text-align: left;
           justify-content: center;
           align-items: center;
-          padding: 0;
+          padding: var(--smallSpacer);
+        }
+
+        .image-of-me {
+          display: none;
+        }
+
+        .offset-container {
+          margin-top: 0;
+        }
+
+        .intro-title-div {
+          justify-content: flex-start;
+          padding-left: var(--smallSpacer);
         }
       }
       .image-of-me {

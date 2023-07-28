@@ -36,7 +36,7 @@ const ContactBar = () => {
             padding-bottom: var(--largeSpacer);
           }
           .logo-container-contact>* {
-            font-size: var(--fontButton); 
+            font-size: var(--fontIcon); 
             color: var(--textSecondary);
             margin-right: var(--smallSpacer);
           }
