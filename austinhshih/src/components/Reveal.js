@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react'
 import {motion, useInView, useAnimation} from 'framer-motion'
 
-export const Reveal = ({children, width}) => {
+export const Reveal = ({children, width, expand}) => {
     width = width? 'fit-content' : '100%'
 
     const ref = useRef(null)
@@ -19,7 +19,7 @@ export const Reveal = ({children, width}) => {
         }
     }, [isInView])
     return (
-        <div ref={ref} style={{position: 'relative', width, overflow: 'hidden', padding: '6px'}}>
+        <div ref={ref} style={{position: 'relative', width, overflow: 'hidden', padding: `${expand? '6px' : '0px'}`}}>
             <motion.div
                 variants={{
                     hidden: {opacity: 0, y: 75},

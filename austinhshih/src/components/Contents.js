@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import mediaQueries from '../media-queries';
 import { BiMenuAltLeft } from 'react-icons/bi'
+import { AiOutlineDownload } from 'react-icons/ai'
+
 
 const Contents = ({refs}) => {
   const [display, setDisplay] = useState(false);
@@ -54,15 +56,6 @@ const Contents = ({refs}) => {
                 key={index}
                 className='menu-item'
                 onClick={() => {
-                  // if (item.name === 'skills') {
-                  //   setDefaultTOC('skills')
-                  //   setActiveTOC('skills')
-                  // } else if (item.name === 'contact') {
-                  //   setDefaultTOC('contact')
-                  //   setActiveTOC('contact')
-                  // } else {
-                  //   setDefaultTOC('contact')
-                  // }
                   handleScroll(item.ref)
                   setDisplay(false)
                 }}>
@@ -72,6 +65,15 @@ const Contents = ({refs}) => {
           })
         }
       </div>
+      <a 
+        className='resume-button-contents' 
+        href={require('../media/experience/Resume - Austin Shih.pdf')}
+        target='_blank'
+        rel="noopener noreferrer"
+      >
+        <p>resume</p><AiOutlineDownload></AiOutlineDownload>
+      </a>
+      <div className='fixed-gradient'/>
       <style> {`
         .toc-container {
           display: flex;
@@ -109,6 +111,35 @@ const Contents = ({refs}) => {
         .menu-button:hover {
           transform: scale(1.1);
         }
+
+        .resume-button-contents {
+          position: fixed;
+          top: var(--spacer);
+          right: var(--spacer);
+          border-radius: var(--borderRadius);
+          border: solid 1px var(--textPrimary);
+          background-color: var(--whiteButtonFill);
+          color: var(--textPrimary);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: var(--tiniestSpacer);
+          padding: var(--tiniestSpacer) var(--smallSpacer);
+          z-index: 1000;
+          text-decoration: none;
+        }
+
+        .fixed-gradient {
+          position: fixed;
+          display: none;
+          left: 0;
+          right: 0;
+          top; 0;
+          height: 70px;
+          background-color: var(--backgroundPrimary);
+          opacity: 0.9;
+          z-index: 500;
+        }
         ${mediaQueries.tabletSize} {
           .menu-button {
             display: flex;
@@ -124,6 +155,15 @@ const Contents = ({refs}) => {
             padding-right: var(--tocOffsetLeft);
             background-color: var(--tocBackground);
           }
+
+          .resume-button-contents {
+            top: var(--smallSpacer);
+          }
+
+          .fixed-gradient {
+            display: block;
+          }
+
         }
       `} </style>
     </>

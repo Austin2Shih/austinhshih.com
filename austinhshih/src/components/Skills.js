@@ -1,5 +1,6 @@
 import React, {forwardRef} from 'react'
 import skillsData from '../data/skills-data';
+import { Reveal } from './Reveal';
 
 const SkillList = ({data}) => {
   return (
@@ -7,13 +8,14 @@ const SkillList = ({data}) => {
     <div className='skills-list-container'>
       {data.map((li, index) => {
         return (
-          <div key={index}>
+          <Reveal width='fit-content' key={index}>
+          <div style={{display: 'flex', flexDirection: "row"}}>
             <p>{li}</p>
             {index !== data.length - 1 &&
               <p style={{margin: '0 var(--tiniestSpacer) 0 var(--tiniestSpacer)'}}>•</p>
             }
           </div>
-
+          </Reveal>
         )
       })}
     </div>

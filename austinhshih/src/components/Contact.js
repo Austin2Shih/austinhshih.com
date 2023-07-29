@@ -6,6 +6,8 @@ import { GiSmartphone } from 'react-icons/gi'
 import ContactBar from './contact/ContactBar'
 import mediaQueries from '../media-queries'
 
+import { Reveal } from './Reveal'
+
 const Contact = forwardRef((props, ref) => {
   return (
     <>
@@ -14,19 +16,19 @@ const Contact = forwardRef((props, ref) => {
         <div className='contact-aligner'>
           <div className='contact-large-icons'>
             <div>
-              <p className='contact-large-icon'><GoLocation></GoLocation></p>
-              <h3>WHERE TO FIND ME</h3>
-              <p>{contactData.location}</p>
+              <Reveal><p className='contact-large-icon'><GoLocation></GoLocation></p></Reveal>
+              <Reveal><h3>WHERE TO FIND ME</h3></Reveal>
+              <Reveal><p>{contactData.location}</p></Reveal>
             </div>
             <div>
-              <p className='contact-large-icon'><AiOutlineMail></AiOutlineMail></p>
-              <h3>EMAIL ME AT</h3>
-              <a className='contact-link' href='mailto: austinhshih@gmail.com'><p>{contactData.email}</p></a>
+              <Reveal><p className='contact-large-icon'><AiOutlineMail></AiOutlineMail></p></Reveal>
+              <Reveal><h3>EMAIL ME AT</h3></Reveal>
+              <Reveal><a className='contact-link' href='mailto: austinhshih@gmail.com'><p>{contactData.email}</p></a></Reveal>
             </div>
             <div>
-              <p className='contact-large-icon'><GiSmartphone></GiSmartphone></p>
-              <h3>CALL ME AT</h3>
-              <a className='contact-link' href='tel:+15107373634'><p>{contactData.phone}</p></a>
+              <Reveal><p className='contact-large-icon'><GiSmartphone></GiSmartphone></p></Reveal>
+              <Reveal><h3>CALL ME AT</h3></Reveal>
+              <Reveal><a className='contact-link' href='tel:+15107373634'><p>{contactData.phone}</p></a></Reveal>
             </div>
           </div>
         </div>
@@ -64,7 +66,7 @@ const Contact = forwardRef((props, ref) => {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 200px;
+        width: 210px;
       }
       .contact-large-icon {
         font-size: var(--fontHuge);

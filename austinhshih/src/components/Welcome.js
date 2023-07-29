@@ -22,7 +22,7 @@ const Welcome = React.forwardRef((props, ref) => {
             <Reveal>
             <h3 className="welcome-software-stack">Software Engineer | Full Stack</h3>
             </Reveal>
-            <Reveal width='fit-content'>
+            <Reveal expand={true} width='fit-content'>
               <button onClick={scrollDown} className="continue-button">
                 <BsChevronDown></BsChevronDown>
               </button>

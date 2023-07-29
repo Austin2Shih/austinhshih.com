@@ -8,6 +8,7 @@ import Education from './experience/Education';
 import { AiOutlineDownload } from 'react-icons/ai'
 
 import mediaQueries from '../media-queries';
+import { Reveal } from './Reveal';
 
 const Experience = forwardRef((props, ref) => {
   return (
@@ -37,6 +38,7 @@ const Experience = forwardRef((props, ref) => {
               </div>
             ))
           }
+          <Reveal expand={true}>
           <a 
             className='resume-button' 
             href={require('../media/experience/Resume - Austin Shih.pdf')}
@@ -45,6 +47,7 @@ const Experience = forwardRef((props, ref) => {
           >
             <p>resume</p><AiOutlineDownload></AiOutlineDownload>
           </a>
+          </Reveal>
         </div>
       </div>
       <style> {`
@@ -80,7 +83,7 @@ const Experience = forwardRef((props, ref) => {
       .resume-button {
         height: 40px;
         border-radius: var(--borderRadius);
-        border: solid 2px var(--backgroundPrimary);
+        border: solid 2px var(--textTertiary);
         background-color: var(--blurpleButtonFill);
         margin-top: var(--largerSpacer);
         margin-bottom: var(--largeSpacer);
@@ -92,6 +95,10 @@ const Experience = forwardRef((props, ref) => {
         text-align: center;
         align-items: center;
         text-decoration: none;
+      }
+
+      .resume-button:hover {
+        transform: scale(1.02);
       }
       .resume-button>p {
         color: var(--textSecondary);

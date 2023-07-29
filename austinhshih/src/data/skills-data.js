@@ -5,11 +5,10 @@ const skillsData =
         "React.js",
         "Next.js", 
         "Express.js",
-        "Unity", 
         "PostgreSQL",
         "Knex.js",
         "GraphQL",
-        "Apollo"
+        "Apollo",
     ],
     codingLanguages: 
     [

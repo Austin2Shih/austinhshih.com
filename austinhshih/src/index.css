@@ -116,14 +116,15 @@ a {
 
 @media (max-width: 664px) {
     html {
-        --fontSmall: 0.75rem;
-        --fontMedium: 0.84rem;
-        --fontSmallHeader: 0.78rem;
-        --fontHeader: 0.9rem;
+        --fontSmall: 1rem;
+        --fontMedium: 1.1rem;
+        --fontSmallHeader: 1rem;
+        --fontHeader: 1.2rem;
         --fontButton: 1.4rem;
-        --fontHuge: 2.1rem;
+        --fontHuge: 2.5rem;
 
         --projectImagePercentage: 100%;
         --projectTextPercentage: 100%;
+
     }
 }
