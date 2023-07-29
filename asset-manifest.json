@@ -1,22 +1,22 @@
 {
-  "main.css": "/static/css/main.6b42fa83.chunk.css",
-  "main.js": "/static/js/main.24c174ea.chunk.js",
-  "main.js.map": "/static/js/main.24c174ea.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.e2b643c4.chunk.js": "/static/js/2.e2b643c4.chunk.js",
-  "static/js/2.e2b643c4.chunk.js.map": "/static/js/2.e2b643c4.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.69a0069f64d95c912018afc8cc18915d.js": "/precache-manifest.69a0069f64d95c912018afc8cc18915d.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.6b42fa83.chunk.css.map": "/static/css/main.6b42fa83.chunk.css.map",
-  "static/media/MusicMaps.png": "/static/media/MusicMaps.ef65af5f.png",
-  "static/media/Resume - Austin Shih.pdf": "/static/media/Resume - Austin Shih.5e6b3e82.pdf",
-  "static/media/TortlePoll.PNG": "/static/media/TortlePoll.8a96058a.PNG",
-  "static/media/city-photo.jpg": "/static/media/city-photo.570dc817.jpg",
-  "static/media/falling block game image.jpg": "/static/media/falling block game image.fb0380e5.jpg",
-  "static/media/hawaii-pic.jpg": "/static/media/hawaii-pic.38091706.jpg",
-  "static/media/minesweeper-image.png": "/static/media/minesweeper-image.a091543d.png",
-  "static/media/pancake-bot.PNG": "/static/media/pancake-bot.98e55277.PNG",
-  "static/media/ring-detection.png": "/static/media/ring-detection.70fb1db9.png"
+  "files": {
+    "main.css": "/static/css/main.f1fc1d7e.css",
+    "main.js": "/static/js/main.ac2eba61.js",
+    "static/media/ring-detection.png": "/static/media/ring-detection.2fdefc9ab48f15a7f02c.png",
+    "static/media/hawaii-pic.jpg": "/static/media/hawaii-pic.d8226261c6f1968019cb.jpg",
+    "static/media/falling block game image.jpg": "/static/media/falling block game image.99fbdf898a7ad10b556f.jpg",
+    "static/media/city-photo.jpg": "/static/media/city-photo.f278d0f1e868e34edf71.jpg",
+    "static/media/MusicMaps.png": "/static/media/MusicMaps.7f7aaec72da9ddd83d5b.png",
+    "static/media/TortlePoll.PNG": "/static/media/TortlePoll.5e833ecfddda41f08783.PNG",
+    "static/media/minesweeper-image.png": "/static/media/minesweeper-image.d39e31a2eba1682f11a7.png",
+    "static/media/pancake-bot.PNG": "/static/media/pancake-bot.f86cd4cac1b50836389b.PNG",
+    "static/media/Resume - Austin Shih.pdf": "/static/media/Resume - Austin Shih.23fd8522cffcfac38a56.pdf",
+    "index.html": "/index.html",
+    "main.f1fc1d7e.css.map": "/static/css/main.f1fc1d7e.css.map",
+    "main.ac2eba61.js.map": "/static/js/main.ac2eba61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1fc1d7e.css",
+    "static/js/main.ac2eba61.js"
+  ]
 }
