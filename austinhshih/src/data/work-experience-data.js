@@ -10,13 +10,14 @@ const workExperienceData = [
         ],
     }, 
     {
-        company: '#Include',
-        position: 'Backend developer',
-        timeFrame: 'September 2021 - Present',
+        company: '#Include at Davis',
+        position: 'Tech Lead',
+        timeFrame: 'Winter 2022 - Present',
         description: [
-            "Manage Content Management Systems to allow clients to easily update their website",
-            "Build custom endpoints in Next.js to allow front end easy access to our database handled with Strapi",
-            "Learning industry level web development practices with Express.js and React.js"
+            "Lead cohort of 10 developers in creating a full stack web application for local clients",
+            "Mentor cohort members on best coding practices and perform in-depth code reviews",
+            "Deployed 2 websites for local businesses within 10 weeks",
+            
         ],
     }, 
     {

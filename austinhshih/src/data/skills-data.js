@@ -2,6 +2,10 @@ const skillsData =
 {
     frameworks: 
     [
+        "Tensorflow",
+        "Keras",
+        "Google Cloud",
+        "Flask",
         "React.js",
         "Next.js", 
         "Express.js",

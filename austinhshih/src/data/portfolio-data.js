@@ -1,5 +1,15 @@
 const portfolioData = [
     {
+        title: 'Moodify',
+        shortDesc: 'Music mood classifier',
+        points: [
+            "Takes mp3 file as input and gives back a mood breakdown of your song",
+            "Trained on 5 second audio data with no vocals",
+        ],
+        imageFileName: 'moodify.png',
+        projectLink: 'https://moodify.austinshih.com',
+    },
+    {
         title: 'MusicMaps',
         shortDesc: 'Map of nearby Spotify listening activity for discovering new music',
         points: [
