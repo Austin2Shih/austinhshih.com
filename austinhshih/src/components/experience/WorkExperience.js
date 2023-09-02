@@ -12,12 +12,15 @@ const WorkExperience = ({data}) => {
             <Reveal>
             <h4 style={{fontSize: 'var(--fontSmallHeader)', margin: '4px 0px 4px 0px'}}>{data.timeFrame}</h4>
             </Reveal>
-            <ul style={{listStylePosition: 'outside', paddingInlineStart: '1rem', margin: 0}}>
+            <ul style={{listStylePosition: 'outside', paddingInlineStart: '0rem', margin: 0}}>
             {
                 data.description.map((desc, index) => {
                     return (
                       <Reveal key={index}>
-                        <li className='work-desc-item'>{desc}</li>
+                        <div style={{display: 'flex', flexDirection: 'row'}}>
+                          <div style={{width: '18px', flexShrink: '0'}}></div>
+                          <li className='work-desc-item'>{desc}</li>
+                        </div>
                       </Reveal>
                     )
                 })
@@ -42,6 +45,7 @@ const WorkExperience = ({data}) => {
             font-weight: 300;
             margin-bottom: 4px;
         }
+
       `} </style>
     </>
   )
